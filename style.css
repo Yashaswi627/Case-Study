@@ -1,41 +1,30 @@
 .heading {
-    font-size: 20px;
-    list-style: none;
-    float: center;
-    top: 10px;
-    right: 30px;
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.note {
+    font-size: 15px;
+    color: black;
+}
+
+.copy_right_footer {
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    line-height: 3;
     text-align: center;
-    background-color: #346592;
-    border: #346592 solid;
-    border-radius: 20px;
 }
 
-.first_object {
-    background-color: turquoise;
-    padding: 20px;
-    border: solid white;
-    box-shadow:1px 1px 1px 3px ;
+canvas {
+    border: 5px solid white;
     border-radius: 20px;
-    width: 200px;
-    margin: 20px;
-}
-
-.second_object {
-    background-color: turquoise;
-    padding: 20px;
-    border: solid white;
-    box-shadow:1px 1px 1px 3px ;
-    border-radius: 20px;
-    width: 200px;
-    margin: 20px 20px 20px 20px;
-}
-
-.third_object {
-    background-color: turquoise;
-    padding: 20px;
-    border: solid white;
-    box-shadow:1px 1px 1px 3px ;
-    border-radius: 20px;
-    width: 200px;
-    margin: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px gray;
+    width: 50%;
+    height: 80%;
+    float: right;
 }
