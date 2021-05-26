@@ -1,39 +1,85 @@
 <html>
-<head>
-  <title>Realtime Drawing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <head>
+        <title>Case Study</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body>
+        <div class="heading">
+            <center>
+                <p>Case Study</p>
+                <img src="https://www.pngkey.com/png/full/672-6723394_case-study-icon.png" height="100px" width="100px">
+            </center>
+        </div>
+        <span>
+            <div class="first_object">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+                    <p>Test Image-Alpha</p>
+                    <img src="https://www.ikea.com/in/en/images/products/ikea-365-water-bottle-dark-grey__0916298_pe785100_s5.jpg?f=xs" height="200px" width="140px" class="img-responsive">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+                <h5>Output on <b>Wolfram Project</b>-
+                    <span>Bottle</span>
+                </h5>
 
-<body>
-<center>
-  <h3 class="btn btn-info heading">Changing width, height and postion of a square in Realtime
-    <br>
-    <span class="note">NOTE - Get your left and right wrist closer 
-      to reduce the size of the square and to increase the size of 
-      the square keep your left and right wrist far from each other. 
-      Move you nose to move the square</span>
-      <span id="square_side"></span>
-    <br>
+                <h5>Output on <b>Mobilenet Model</b>-
+                    <span>Hair Spray</span>
+                </h5>
 
-  </h3>
-  <br>
-  <canvas id="mycanvas"></canvas>
-</center>
+                <div class="mini_result">
+                    <h4>Result - Wolfram Project is more accurate</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="second_object">
 
-<div class="copy_right_footer">
-  Developed By - WhiteHatJr Team
-</div>
+                    <p>Test Image-Beta</p>
+                    <img src="https://assets.ajio.com/medias/sys_master/root/h5a/h59/13018715881502/-1117Wx1400H-460342492-blue-MODEL.jpg" height="200px" width="140px" class="img-responsive">
 
-<script src="main.js"></script>
-</body>
+                <h5>Output on <b>Wolfram Project</b>-
+                    <span>Shoe</span>
+                </h5>
+
+                <h5>Output on <b>Mobilenet Model</b>-
+                    <span>Wardrobe or Closet or Press</span>
+                </h5>
+
+                <div class="mini_result">
+                    <h4>Result - Wolfram Project is more accurate</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="third_object">
+
+                    <p>Test Image-Gamma</p>
+                    <img src="https://s1.poorvikamobile.com/image/data/AAAAA/Apple/iPhone%2011/New/Green/Apple-iPhone-11-back_ios.jpeg" height="200px" width="140px" class="img-responsive">
+
+                <h5>Output on <b>Wolfram Project</b>-
+                    <span>Parachute</span>
+                </h5>
+
+                <h5>Output on <b>Mobilenet Model</b>-
+                    <span>Refrigerator or Icebox</span>
+                </h5>
+
+                <div class="mini_result">
+                    <h4>Result - Neither one got it correct</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+        </span>
+        <h3 id="footer">Because Wolfram Project got 2 out of the 3 images right and Mobilenet Model got all of them wrong, Wolfram Project is the most accurate out of the two neural networks.</h3>
+    </body>
 </html>
-
-
